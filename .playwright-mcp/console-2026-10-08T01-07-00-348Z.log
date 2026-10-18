@@ -1,0 +1,65 @@
+[    1445ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/login:0
+[    1604ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_cjs_react-dom-client_development_1nq9a-7w2rk6e.js:16702
+[    1702ms] Error: Failed to load external module @prisma/client-2c3a283f134fdcb6: Error: Cannot find module '.prisma/client/default'
+Require stack:
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\@prisma\client\default.js
+- C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[root-of-the-server]__1u8teihef3-hw._.js
+- C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js
+- C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\app\page.js
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\server\require.js
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\server\load-components.js
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\build\utils.js
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\server\lib\start-server.js
+    at Context.externalRequire [as x] (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:827:15)
+    at module evaluation (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[root-of-the-server]__1u8teihef3-hw._.js:4774:33)
+    at <unknown> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1460:27)
+    at runWithHooks (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1736:9)
+    at instantiateModuleShared (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1458:9)
+    at instantiateModule (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1739:23)
+    at getOrInstantiateModuleFromParent (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1775:23)
+    at Context.esmImport [as i] (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:465:20)
+    at module evaluation (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[root-of-the-server]__0nu67z5soc7no._.js:211:212)
+    at <unknown> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1460:27)
+    at runWithHooks (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1736:9)
+    at instantiateModuleShared (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1458:9)
+    at instantiateModule (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1739:23)
+    at getOrInstantiateModuleFromParent (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1775:23)
+    at Context.esmImport [as i] (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:465:20)
+    at module evaluation (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[root-of-the-server]__0nu67z5soc7no._.js:183:142)
+    at <unknown> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1460:27)
+    at runWithHooks (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1736:9)
+    at instantiateModuleShared (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1458:9)
+    at instantiateModule (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1739:23)
+    at getOrInstantiateModuleFromParent (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1775:23)
+    at Context.esmImport [as i] (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:465:20)
+    at module evaluation (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[root-of-the-server]__0nu67z5soc7no._.js:37:144)
+    at <unknown> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1460:27)
+    at runWithHooks (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1736:9)
+    at instantiateModuleShared (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1458:9)
+    at instantiateModule (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1739:23)
+    at getOrInstantiateModuleFromParent (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1775:23)
+    at Context.esmImport [as i] (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:465:20)
+    at module evaluation (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[root-of-the-server]__0nu67z5soc7no._.js:232:47)
+    at <unknown> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1460:27)
+    at runWithHooks (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1736:9)
+    at instantiateModuleShared (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1458:9)
+    at instantiateModule (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1739:23)
+    at getOrInstantiateModuleFromParent (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:1775:23)
+    at Context.commonJsRequire [as r] (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\[turbopack]_runtime.js:486:12)
+    at <unknown> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\node_modules_next_0-mtuf2svzn6v._.js:2443:300)
+    at Array.<anonymous> (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\node_modules_1ifohudz2n04y._.js:2255:38)
+    at getLayoutOrPageModule (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:101:2080)
+    at visit (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:322:10317)
+    at visit (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:322:11212)
+    at async visit (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:322:11206)
+    at async visit (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:322:11206)
+    at async anySegmentNeedsInstantValidation (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:322:11275)
+    at async generateDynamicFlightRenderResultWithStagesInDev (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:322:29776)
+    at async doRender (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\node_modules_1ifohudz2n04y._.js:1065:32)
+    at async responseGenerator (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\node_modules_1ifohudz2n04y._.js:1427:36)
+    at async AppPageRouteModule.handleResponse (file://C:\Users\Rafael\Documents\projetos\financontrol\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js:367:92983)
+    at async handleResponse (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\node_modules_1ifohudz2n04y._.js:1521:36)
+    at async Module.handler (file://C:\Users\Rafael\Documents\projetos\financontrol\.next\dev\server\chunks\ssr\node_modules_1ifohudz2n04y._.js:1999:24)
+[    1696ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03q-xsfc._.js:703

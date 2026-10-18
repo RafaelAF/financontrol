@@ -1,0 +1,68 @@
+- generic:
+  - generic [active]:
+    - generic [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - navigation [ref=f5e6]:
+          - button [disabled] [ref=f5e7]:
+            - img "previous" [ref=f5e8]
+          - generic [ref=f5e10]:
+            - generic [ref=f5e11]: 1/
+            - generic [ref=f5e12]: "1"
+          - button [disabled] [ref=f5e13]:
+            - img "next" [ref=f5e14]
+        - generic [ref=f5e17]:
+          - generic "Latest available version is detected (16.4.0)." [ref=f5e20]: Next.js 16.4.0
+          - generic [ref=f5e21]: Turbopack
+      - dialog "Build Error" [ref=f5e23]:
+        - generic [ref=f5e26]:
+          - generic [ref=f5e28]:
+            - generic [ref=f5e29]:
+              - generic [ref=f5e30]: Build Error
+              - generic [ref=f5e32]:
+                - button "Copy Error Info" [ref=f5e33] [cursor=pointer]
+                - link "Go to related documentation" [ref=f5e36] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/messages/module-not-found
+                - button "Attach Node.js inspector" [ref=f5e39] [cursor=pointer]
+            - generic [ref=f5e48]: "Module not found: Can't resolve 'cn'"
+          - generic [ref=f5e51]:
+            - generic [ref=f5e53]:
+              - generic [ref=f5e58]: ./src/components/ui/button.tsx (3:1)
+              - button "Open in editor" [ref=f5e59] [cursor=pointer]
+            - generic [ref=f5e64]:
+              - generic [ref=f5e65]: "Error: Module not found: Can't resolve 'cn'"
+              - generic [ref=f5e66]: 1 |
+              - text: import
+              - generic [ref=f5e67]: "{"
+              - text: Button as ButtonPrimitive
+              - generic [ref=f5e68]: "}"
+              - text: from "@base-ui/react/button"
+              - generic [ref=f5e69]: 2 |
+              - text: import
+              - generic [ref=f5e70]: "{ cva,"
+              - text: type VariantProps
+              - generic [ref=f5e71]: "}"
+              - text: from "class-variance-authority" >
+              - generic [ref=f5e72]: 3 |
+              - text: import
+              - generic [ref=f5e73]: "{ cn }"
+              - text: from "cn"
+              - generic [ref=f5e74]: "|"
+              - text: ^^^^^^^^^^^^^^^^^^^^^^^
+              - generic [ref=f5e75]: 4 |
+              - generic [ref=f5e76]: 5 |
+              - text: const
+              - generic [ref=f5e77]: buttonVariants = cva(
+              - generic [ref=f5e78]: 6 |
+              - generic [ref=f5e79]: "\"group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-t..."
+              - generic [ref=f5e80]:
+                - text: "Import traces: Client Component Browser: ./src/components/ui/button.tsx [Client Component Browser] ./src/app/(auth)/login/login-button.tsx [Client Component Browser] ./src/app/(auth)/login/login-button.tsx [Server Component] ./src/app/(auth)/login/page.tsx [Server Component] Client Component SSR: ./src/components/ui/button.tsx [Client Component SSR] ./src/app/(auth)/login/login-button.tsx [Client Component SSR] ./src/app/(auth)/login/login-button.tsx [Server Component] ./src/app/(auth)/login/page.tsx [Server Component]"
+                - link "https://nextjs.org/docs/messages/module-not-found" [ref=f5e81] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/messages/module-not-found
+    - generic [ref=f5e86] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=f5e87]
+      - button "Open issues overlay" [ref=f5e92]:
+        - generic [ref=f5e93]:
+          - generic [aria-hidden] [ref=f5e94]: "0"
+          - generic [ref=f5e95]: "1"
+        - generic [ref=f5e96]: Issue
+  - alert [ref=f5e97]

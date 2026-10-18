@@ -1,0 +1,19 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - link "FinanControl" [ref=f7e3] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f7e9]:
+      - generic [ref=f7e10]:
+        - heading "Bem-vindo de volta" [level=1] [ref=f7e11]
+        - paragraph [ref=f7e12]: Acesse sua conta para continuar gerenciando suas finanças.
+      - button "Continuar com Google" [ref=f7e14]
+      - paragraph [ref=f7e16]: Ao entrar, você concorda com nossos Termos de Serviço e Política de Privacidade.
+  - generic [ref=f7e21] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=f7e22]
+    - generic [ref=f7e26]:
+      - button "Open issues overlay" [ref=f7e27]:
+        - generic [ref=f7e28]:
+          - generic [aria-hidden] [ref=f7e29]: "-1"
+          - generic [ref=f7e30]: "0"
+      - button "Collapse issues badge" [ref=f7e31]
+  - alert [ref=f7e34]
