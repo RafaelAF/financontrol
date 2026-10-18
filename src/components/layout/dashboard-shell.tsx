@@ -31,7 +31,7 @@ export function DashboardShell({ children }: DashboardShellProps) {
     exact ? pathname === href : pathname.startsWith(href);
 
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex min-h-dvh bg-background">
       {/* Sidebar */}
       <aside className="hidden md:flex w-64 flex-col border-r border-border bg-sidebar px-4 py-6">
         {/* Logo */}
