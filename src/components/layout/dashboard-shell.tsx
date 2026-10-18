@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LayoutDashboard, ArrowLeftRight, Wallet } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   {
@@ -39,6 +40,7 @@ export function DashboardShell({ children }: DashboardShellProps) {
             <Wallet className="h-5 w-5" />
           </div>
           <span className="text-lg font-bold tracking-tight">FinanControl</span>
+          <ThemeToggle className="ml-auto" />
         </div>
 
         {/* Nav */}
@@ -79,30 +81,37 @@ export function DashboardShell({ children }: DashboardShellProps) {
             </div>
             <span className="font-bold">FinanControl</span>
           </div>
+          <ThemeToggle />
         </header>
 
         {/* Main content */}
-        <main className="flex-1 p-4 md:p-8 overflow-auto">{children}</main>
+        <main className="flex-1 p-4 pb-28 md:p-8 md:pb-8 overflow-auto">{children}</main>
 
-        {/* Mobile bottom nav */}
-        <nav className="md:hidden flex border-t border-border bg-background">
-          {navLinks.map(({ href, label, icon: Icon, exact }) => {
-            const active = isActive(href, exact);
-            return (
-              <Link
-                key={href}
-                href={href}
-                className={`flex-1 flex flex-col items-center gap-1 py-3 text-xs font-medium transition-colors ${
-                  active
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <Icon className="h-5 w-5" />
-                {label}
-              </Link>
-            );
-          })}
+        {/* Bottom nav flutuante (mobile) */}
+        <nav
+          aria-label="Navegação principal"
+          className="md:hidden fixed bottom-0 inset-x-0 z-50 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]"
+        >
+          <div className="flex items-center gap-1 rounded-2xl border border-border bg-card/95 supports-[backdrop-filter]:bg-card/80 backdrop-blur-md shadow-lg p-1.5">
+            {navLinks.map(({ href, label, icon: Icon, exact }) => {
+              const active = isActive(href, exact);
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  aria-current={active ? "page" : undefined}
+                  className={`flex flex-1 flex-col items-center justify-center gap-1 rounded-xl py-2.5 text-xs font-medium transition-all active:scale-95 ${
+                    active
+                      ? "bg-primary text-primary-foreground shadow-sm"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  <Icon className="h-5 w-5" strokeWidth={active ? 2.4 : 2} />
+                  {label}
+                </Link>
+              );
+            })}
+          </div>
         </nav>
       </div>
     </div>
