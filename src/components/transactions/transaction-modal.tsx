@@ -111,13 +111,13 @@ export function TransactionModal({
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/50 z-40 animate-in fade-in duration-200"
+        className="fixed inset-0 bg-black/50 z-[60] animate-in fade-in duration-200"
         onClick={onClose}
       />
 
       {/* Modal */}
-      <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4">
-        <div className="bg-card border border-border rounded-xl shadow-xl w-full max-w-md animate-in slide-in-from-bottom-4 sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-200">
+      <div className="fixed inset-0 z-[70] flex items-center justify-center p-4">
+        <div className="bg-card border border-border rounded-xl shadow-xl w-full max-w-md max-h-[calc(100dvh-2rem)] overflow-y-auto animate-in zoom-in-95 duration-200">
           {/* Header */}
           <div className="flex items-center justify-between px-5 py-4 border-b border-border">
             <h2 className="font-semibold text-base">
